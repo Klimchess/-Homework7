@@ -6,6 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
+        task8();
     }
 
     public static void task1() {
@@ -75,14 +77,32 @@ public class Main {
         }
     }
     public static void task6() {
+        System.out.println( "задача 6");
         int sum = 15000; //сумма накоплений
         int month = 1;
         int nineYears = (month * 12) * 9; //девять лет
         while (month <= nineYears) {
             sum+= sum/100 *7;
+            month++;
             if (month %6 ==0) { System.out.println( "Месяц " + month + " сумма на счете " +  sum + " рублей");}
-                month++;
-
             }
+    }
+    public static void task7() {
+        System.out.println("задача 7");
+        for (int friday = 2; friday <32; friday = friday +7) {
+            System.out.println( "Сегодня пятница, " + friday + " число. Необходимо подготовить отчет");
+        }
+    }
+    public static void task8() {
+        System.out.println("задача 8");
+        int year = 2022;
+        int initialPeriod = year - 200;
+        int finalPeriod = year + 100;
+        for (int i = 0; i < finalPeriod; i = i +79) {
+            if (i > initialPeriod)
+          System.out.println(i);
+        }
+
+
     }
 }
